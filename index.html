@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="invoice-container">
+        <!-- The generated invoice will be displayed here -->
+    </div>
+    <div id="invoice">
+        <div id="invoice-header">
+            <div id="company-details">
+                <h2>Your Company Name</h2>
+                <p>123 Main Street</p>
+                <p>City, State, Zip</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@yourcompany.com</p>
+            </div>
+            <div id="customer-details">
+                <h2>Bill To</h2>
+                <input type="text" id="customer-name" placeholder="Customer Name">
+                <input type="text" id="customer-company" placeholder="Customer Company">
+                <input type="text" id="customer-address" placeholder="Customer Address">
+                <input type="text" id="customer-city" placeholder="City, State, Zip">
+            </div>
+        </div>
+        <table id="invoice-items">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Invoice items will be dynamically added here -->
+            </tbody>
+        </table>
+        <div id="invoice-total">
+            <!-- Total amount and any additional notes, tax information, etc. -->
+        </div>
+    </div>
+    <button id="add-item">Add Item</button>
+    <!-- <button id="generate-invoice">Generate Invoice</button> -->
+    <button id="print-invoice">Print Invoice</button>
+    
+</body>
+</html>
